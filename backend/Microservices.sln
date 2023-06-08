@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReverseProxy", "ReverseProxy", "{0DAD8F89-01E5-4DBD-9EDC-F117D44B692C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth", "Auth", "{893A0955-BA16-43B1-A169-0126B8CD96D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deelnames", "Deelnames", "{E8CFF965-93DD-43EA-B353-1B665985630A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aanvragen", "Aanvragen", "{BDDC9A2A-FAC4-4C1D-A6A7-B0E00484EC41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.ReverseProxy", "Microservices.ReverseProxy\Microservices.ReverseProxy.csproj", "{83E9C7AD-B23C-4276-8BE0-F939977E985B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Deelnames", "Microservices.Deelnames\Microservices.Deelnames.csproj", "{CAF4AECF-0473-4445-823A-6A3015E6D9C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Auth", "Microservices.Auth\Microservices.Auth.csproj", "{5FDF93A4-6E67-4E08-BC61-C92AC448C808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Aanvragen", "Microservices.Aanvragen\Microservices.Aanvragen.csproj", "{395DF033-BCBF-431A-9C3A-4386A265B70E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KeyGen", "KeyGen", "{DBF07C87-89FC-47A9-9811-0B5196194CDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Keygen", "Microservices.Keygen\Microservices.Keygen.csproj", "{8075D8EE-07E3-4785-B9F3-C6FB315D0BE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{83E9C7AD-B23C-4276-8BE0-F939977E985B} = {0DAD8F89-01E5-4DBD-9EDC-F117D44B692C}
+		{CAF4AECF-0473-4445-823A-6A3015E6D9C6} = {E8CFF965-93DD-43EA-B353-1B665985630A}
+		{5FDF93A4-6E67-4E08-BC61-C92AC448C808} = {893A0955-BA16-43B1-A169-0126B8CD96D4}
+		{395DF033-BCBF-431A-9C3A-4386A265B70E} = {BDDC9A2A-FAC4-4C1D-A6A7-B0E00484EC41}
+		{8075D8EE-07E3-4785-B9F3-C6FB315D0BE1} = {DBF07C87-89FC-47A9-9811-0B5196194CDD}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83E9C7AD-B23C-4276-8BE0-F939977E985B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E9C7AD-B23C-4276-8BE0-F939977E985B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E9C7AD-B23C-4276-8BE0-F939977E985B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E9C7AD-B23C-4276-8BE0-F939977E985B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF4AECF-0473-4445-823A-6A3015E6D9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF4AECF-0473-4445-823A-6A3015E6D9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF4AECF-0473-4445-823A-6A3015E6D9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF4AECF-0473-4445-823A-6A3015E6D9C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FDF93A4-6E67-4E08-BC61-C92AC448C808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FDF93A4-6E67-4E08-BC61-C92AC448C808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FDF93A4-6E67-4E08-BC61-C92AC448C808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FDF93A4-6E67-4E08-BC61-C92AC448C808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{395DF033-BCBF-431A-9C3A-4386A265B70E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{395DF033-BCBF-431A-9C3A-4386A265B70E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{395DF033-BCBF-431A-9C3A-4386A265B70E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{395DF033-BCBF-431A-9C3A-4386A265B70E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8075D8EE-07E3-4785-B9F3-C6FB315D0BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8075D8EE-07E3-4785-B9F3-C6FB315D0BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8075D8EE-07E3-4785-B9F3-C6FB315D0BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8075D8EE-07E3-4785-B9F3-C6FB315D0BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
