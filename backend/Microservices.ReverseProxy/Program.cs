@@ -1,18 +1,11 @@
-using System.Security.Claims;
-using System.Security.Cryptography;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.JsonWebTokens;
-using Microsoft.IdentityModel.Protocols.OpenIdConnect;
-using Microsoft.IdentityModel.Tokens;
-using PFZW.Web.Services.Microservices.ReverseProxy.Jwt;
-
+using Microservices.ReverseProxy.Auth;
 
 const string origins = "Localhost";
 
 var builder = WebApplication.CreateBuilder(args);
 
-////Jwt Raw Coding test. Om de jwt key te testen.
-////builder.AddJwtAuthenticationTestConsumerAuth();
+//// Auth.12 - Raw Coding
+builder.AddJwtAuthenticationTestConsumerAuth();
 
 builder.Services.AddCors(options => 
     options.AddPolicy(name: origins,
@@ -35,11 +28,10 @@ var message = new
     msg = "Hello Reverse Proxy!"
 };
 
-
 app.MapGet("/", () => message);
 
 ////Jwt Raw Coding test. Om de jwt key te testen.
-////app.AddJwtAuthenticationTest();
+app.AddJwtAuthenticationTest();
 
 app.MapReverseProxy();
 

@@ -3,8 +3,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddReverseProxy();
 
-
-
 var app = builder.Build();
 
 var message = new
