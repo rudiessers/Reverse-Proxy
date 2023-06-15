@@ -4,8 +4,8 @@ const string origins = "Localhost";
 
 var builder = WebApplication.CreateBuilder(args);
 
-//// Auth.12 - Raw Coding
-builder.AddJwtAuthenticationTestConsumerAuth();
+// Auth
+builder.AddAuth2();
 
 builder.Services.AddCors(options => 
     options.AddPolicy(name: origins,
@@ -30,8 +30,8 @@ var message = new
 
 app.MapGet("/", () => message);
 
-////Jwt Raw Coding test. Om de jwt key te testen.
-app.AddJwtAuthenticationTest();
+// Auth
+app.AddAuth2();
 
 app.MapReverseProxy();
 
